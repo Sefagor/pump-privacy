@@ -31,11 +31,23 @@
   .note { background: #f7f7f7; border: 1px solid #e2e2e2; border-radius: 8px; padding: .85rem 1rem; }
   .wrap { overflow-x: auto; }
 </style>
+<!-- lang:head -->
+<link rel="alternate" hreflang="en" href="https://pumphq.app/privacy.html">
+<link rel="alternate" hreflang="tr" href="https://pumphq.app/tr/privacy.html">
+<link rel="alternate" hreflang="de" href="https://pumphq.app/de/privacy.html">
+<link rel="alternate" hreflang="es" href="https://pumphq.app/es/privacy.html">
+<link rel="alternate" hreflang="fr" href="https://pumphq.app/fr/privacy.html">
+<link rel="alternate" hreflang="x-default" href="https://pumphq.app/privacy.html">
+<style>.lang{font-size:.85rem;text-align:right;margin:-1.5rem 0 1.5rem}.lang a{margin-left:.65rem;text-decoration:none;opacity:.7}.lang a:hover{opacity:1;text-decoration:underline}.lang a[aria-current]{opacity:1;font-weight:700}</style>
+<!-- /lang:head -->
 </head>
 <body>
+<!-- lang:nav -->
+<nav class="lang" aria-label="Language"><a href="/privacy.html" hreflang="en" lang="en" title="English" aria-current="page">EN</a><a href="/tr/privacy.html" hreflang="tr" lang="tr" title="Türkçe">TR</a><a href="/de/privacy.html" hreflang="de" lang="de" title="Deutsch">DE</a><a href="/es/privacy.html" hreflang="es" lang="es" title="Español">ES</a><a href="/fr/privacy.html" hreflang="fr" lang="fr" title="Français">FR</a></nav>
+<!-- /lang:nav -->
 
 <h1>Pump — Privacy Policy</h1>
-<p class="updated">Last updated: 28 September 2026</p>
+<p class="updated">Last updated: 17 October 2026</p>
 
 <p>Pump is a workout and nutrition tracking app. This policy explains what the app records, what
 leaves your phone, and how to get your data back or removed.</p>
@@ -49,7 +61,9 @@ PumpHQ is the data controller for the information described below.</p>
 <strong>The short version.</strong> Pump has no advertising, no analytics, and no third-party
 trackers of any kind. If you use the app without an account, everything you log stays on your
 phone. Data is only uploaded to the cloud if you sign in <em>and</em> have an active Premium
-subscription.
+subscription. The one thing that leaves your phone for everyone is a food search: what you type,
+or a barcode you scan, is sent to Open Food Facts to find matching products — never your logs or
+account details (see <a href="#food-search">Food search and barcode scanning</a>).
 </div>
 
 <h2>1. Information Pump records</h2>
@@ -88,6 +102,10 @@ subscription.
 counter, and the <code>CAMERA</code> permission if you take a progress photo or an exercise photo
 from within the app. Both are optional — decline them and the rest of the app works normally.</p>
 
+<p>The barcode scanner does not use Pump's camera permission. It is provided by Google Play
+services, which shows the camera view, reads the barcode on your device, and passes Pump only the
+barcode number. Pump never receives the camera image.</p>
+
 <h2>2. What Pump does <em>not</em> collect</h2>
 <ul>
   <li>No advertising identifiers, and no advertising of any kind.</li>
@@ -102,7 +120,8 @@ from within the app. Both are optional — decline them and the rest of the app 
 <h2>3. When your data leaves your phone</h2>
 
 <p><strong>Without an account,</strong> Pump stores everything in a database on your device only.
-Nothing is uploaded.</p>
+Nothing you log is uploaded. (Food search is the exception described below — it sends search text,
+not your data.)</p>
 
 <p><strong>With an account but without Premium,</strong> only your sign-in details are held by
 Firebase Authentication. Your workouts, meals, measurements and photos stay on your device.</p>
@@ -121,6 +140,24 @@ Google's standard contractual clauses.</p>
 
 <p>Regardless of subscription, you can export everything Pump holds locally as a JSON file at any
 time, free of charge, from <em>Profile → Settings → Backup &amp; Sync → Export data</em>.</p>
+
+<h3 id="food-search">Food search and barcode scanning</h3>
+<p>When your phone is online, food search also looks up products in
+<a href="https://world.openfoodfacts.org" rel="noopener">Open Food Facts</a>, a free, open database
+of food products run by a non-profit association based in France. To do that, the app sends Open
+Food Facts the text you type into the food search box, or the number of a barcode you scan, and the
+language the app is set to. Every request also identifies the app by name and version, as Open Food
+Facts asks of every app, and — like any internet request — reaches them from your phone's IP
+address.</p>
+<p>Nothing else is sent: not your account, your email address, your logs, your goals, or any health
+or body information. Open Food Facts is an independent organisation, not our processor; its own
+<a href="https://world.openfoodfacts.org/privacy" rel="noopener">privacy policy</a> applies to the
+requests it receives. Without a connection, the app simply searches its built-in food list instead.</p>
+<p>When you log a product found this way, its name, brand and nutrition values are saved on your
+device so you can find it again offline. If you create your own food after a barcode wasn't found,
+the barcode is saved with that food (and, with Premium, synchronised like your other custom foods).
+Product data from Open Food Facts is made available under the
+<a href="https://opendatacommons.org/licenses/odbl/1-0/" rel="noopener">Open Database License</a>.</p>
 
 <h3 id="testing">Taking part in a test of the app</h3>
 <p>This applies only if you join a pre-release test of Pump. To take part, you join a Google Group,
@@ -145,6 +182,10 @@ the test ending. To have your feedback deleted sooner, email
       are separately consented through Android's permission prompts.</li>
   <li><strong>Consent</strong> — joining a pre-release test and sending feedback, both of which are
       voluntary; see <a href="#testing">Taking part in a test of the app</a>.</li>
+  <li><strong>Legitimate interest</strong> — sending your food search text or a scanned barcode to
+      Open Food Facts, which is what lets the app show products beyond its built-in list. The request
+      contains no account or health information; see
+      <a href="#food-search">Food search and barcode scanning</a>.</li>
 </ul>
 
 <h2>5. How long data is kept</h2>

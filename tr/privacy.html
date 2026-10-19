@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pump — Gizlilik Politikası</title>
+<!-- Translation of /privacy.html. Keep the section ids identical to the English page (the app and
+     other pages link to them), and update this page whenever the English one changes. -->
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    background: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e6e6; background: #131313; }
+    code { background: #262626; }
+    th, td { border-color: #333 !important; }
+    .note { background: #1e1e1e; border-color: #3a3a3a; }
+  }
+  h1 { font-size: 1.9rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.2rem; margin-top: 2.25rem; }
+  h3 { font-size: 1.05rem; margin-top: 1.75rem; }
+  .updated { color: #666; font-size: .9rem; margin-top: 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { border: 1px solid #ddd; padding: .5rem .6rem; text-align: left; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: #f2f2f2; padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  .note { background: #f7f7f7; border: 1px solid #e2e2e2; border-radius: 8px; padding: .85rem 1rem; }
+  .wrap { overflow-x: auto; }
+</style>
+<!-- lang:head -->
+<link rel="alternate" hreflang="en" href="https://pumphq.app/privacy.html">
+<link rel="alternate" hreflang="tr" href="https://pumphq.app/tr/privacy.html">
+<link rel="alternate" hreflang="de" href="https://pumphq.app/de/privacy.html">
+<link rel="alternate" hreflang="es" href="https://pumphq.app/es/privacy.html">
+<link rel="alternate" hreflang="fr" href="https://pumphq.app/fr/privacy.html">
+<link rel="alternate" hreflang="x-default" href="https://pumphq.app/privacy.html">
+<style>.lang{font-size:.85rem;text-align:right;margin:-1.5rem 0 1.5rem}.lang a{margin-left:.65rem;text-decoration:none;opacity:.7}.lang a:hover{opacity:1;text-decoration:underline}.lang a[aria-current]{opacity:1;font-weight:700}</style>
+<!-- /lang:head -->
+</head>
+<body>
+<!-- lang:nav -->
+<nav class="lang" aria-label="Language"><a href="/privacy.html" hreflang="en" lang="en" title="English">EN</a><a href="/tr/privacy.html" hreflang="tr" lang="tr" title="Türkçe" aria-current="page">TR</a><a href="/de/privacy.html" hreflang="de" lang="de" title="Deutsch">DE</a><a href="/es/privacy.html" hreflang="es" lang="es" title="Español">ES</a><a href="/fr/privacy.html" hreflang="fr" lang="fr" title="Français">FR</a></nav>
+<!-- /lang:nav -->
+
+<h1>Pump — Gizlilik Politikası</h1>
+<p class="updated">Son güncelleme: 17 Ekim 2026</p>
+
+<p class="note">Bu çeviri kolaylık sağlamak amacıyla sunulmaktadır. Bu metin ile
+<a href="/privacy.html">İngilizce sürüm</a> arasında bir farklılık olması hâlinde İngilizce sürüm
+geçerlidir.</p>
+
+<p>Pump bir antrenman ve beslenme takip uygulamasıdır. Bu politika, uygulamanın neleri kaydettiğini,
+nelerin telefonundan çıktığını ve verilerini nasıl geri alabileceğini ya da sildirebileceğini
+açıklar.</p>
+
+<p>Uygulama, Sefa Levent Gör'ün ticari adı olan <strong>PumpHQ</strong> tarafından geliştirilir ve
+işletilir: Zimmerstr. 30, 44145 Dortmund, Almanya; iletişim:
+<a href="mailto:support@pumphq.app">support@pumphq.app</a>. Birleşik Krallık/AB GDPR kapsamında,
+aşağıda açıklanan bilgiler için veri sorumlusu PumpHQ'dur.</p>
+
+<div class="note">
+<strong>Kısaca.</strong> Pump'ta reklam, analiz ya da herhangi bir üçüncü taraf izleyici yoktur.
+Uygulamayı hesap olmadan kullanırsan kaydettiğin her şey telefonunda kalır. Veriler yalnızca giriş
+yaparsan <em>ve</em> etkin bir Premium aboneliğin varsa buluta yüklenir. Herkes için telefondan
+çıkan tek şey yemek aramasıdır: yazdığın metin ya da taradığın barkod, eşleşen ürünleri bulmak için
+Open Food Facts'e gönderilir — kayıtların ya da hesap bilgilerin asla gönderilmez (bkz.
+<a href="#food-search">Yemek arama ve barkod tarama</a>).
+</div>
+
+<h2>1. Pump'ın kaydettiği bilgiler</h2>
+
+<div class="wrap">
+<table>
+  <tr><th>Kategori</th><th>Neleri kapsar</th><th>Neden</th></tr>
+  <tr>
+    <td>Hesap bilgileri</td>
+    <td>E-posta adresin, görünen adın ve — Google ile giriş yapıyorsan — Google hesabının profil
+        fotoğrafı.</td>
+    <td>Hesabını oluşturmak, giriş yapmanı sağlamak ve verilerini yeni bir cihazda geri
+        yüklemek için.</td>
+  </tr>
+  <tr>
+    <td>Sağlık ve fitness bilgileri</td>
+    <td>Yaş, cinsiyet, boy, kilo, vücut yağ oranı ve vücut ölçüleri; antrenmanların (egzersizler,
+        setler, tekrarlar ve ağırlıklar); yemek ve kalori kayıtları; su tüketimi; günlük adım
+        sayıları ve belirlediğin hedefler.</td>
+    <td>Uygulamanın içeriği budur — Pump'ın var olma sebebi bunları kaydedip sana geri
+        göstermektir.</td>
+  </tr>
+  <tr>
+    <td>Fotoğraflar</td>
+    <td>Çektiğin ilerleme kontrol fotoğrafları, kendi egzersizlerine eklediğin görseller ve profil
+        fotoğrafın.</td>
+    <td>Yalnızca eklemeyi seçersen saklanır. Sadece uygulamada sana geri göstermek için
+        kullanılır.</td>
+  </tr>
+  <tr>
+    <td>Abonelik durumu</td>
+    <td>Etkin bir Premium aboneliğin olup olmadığı.</td>
+    <td>Premium özelliklerin kilidini açmak için.</td>
+  </tr>
+</table>
+</div>
+
+<p>Pump, telefonunun yerleşik adım sayacını okumak için <code>ACTIVITY_RECOGNITION</code> iznini,
+uygulama içinden ilerleme ya da egzersiz fotoğrafı çekersen <code>CAMERA</code> iznini ister. İkisi
+de isteğe bağlıdır — reddedersen uygulamanın geri kalanı normal şekilde çalışır.</p>
+
+<p>Barkod tarayıcı Pump'ın kamera iznini kullanmaz. Tarayıcıyı Google Play hizmetleri sağlar: kamera
+görüntüsünü gösterir, barkodu cihazında okur ve Pump'a yalnızca barkod numarasını iletir. Pump kamera
+görüntüsünü hiçbir zaman almaz.</p>
+
+<h2>2. Pump'ın <em>toplamadıkları</em></h2>
+<ul>
+  <li>Reklam kimliği yok, hiçbir türde reklam yok.</li>
+  <li>Analiz ya da kullanım takibi yok. Uygulamada analiz veya çökme raporlama SDK'sı bulunmaz.</li>
+  <li>Konum verisi yok.</li>
+  <li>Kişiler, takvim, arama kayıtları ya da mesajlar yok.</li>
+  <li>Ödeme bilgisi yok. Satın almalar tamamen Google Play tarafından yürütülür; Pump kart ya da
+      fatura bilgilerini hiçbir zaman görmez.</li>
+  <li>Verilerin hiçbir zaman satılmaz, kiralanmaz ya da üçüncü tarafların kendi amaçları için
+      paylaşılmaz.</li>
+</ul>
+
+<h2>3. Verilerin telefonundan ne zaman çıkar</h2>
+
+<p><strong>Hesap olmadan</strong> Pump her şeyi yalnızca cihazındaki bir veritabanında saklar.
+Kaydettiğin hiçbir şey yüklenmez. (İstisna aşağıda açıklanan yemek aramasıdır — o da verilerini
+değil, arama metnini gönderir.)</p>
+
+<p><strong>Hesapla ama Premium olmadan</strong> Firebase Authentication yalnızca giriş bilgilerini
+tutar. Antrenmanların, öğünlerin, ölçülerin ve fotoğrafların cihazında kalır.</p>
+
+<p><strong>Hesapla ve etkin bir Premium aboneliğiyle</strong> uygulama, yeni bir telefona
+geçtiğinde hiçbir şey kaybetmemen için verilerini senkronize eder. Senkronizasyon uygulamayı açıp
+kapattığında otomatik çalışır; <em>Profil → Ayarlar → Yedekleme ve senkronizasyon</em> bölümünden
+elle de başlatabilirsin.</p>
+
+<p>Yüklenen veriler, Google Firebase'de sana ait özel bir alanda (hesap kimliğine bağlı bir yol
+altında) Cloud Firestore ve Cloud Storage for Firebase kullanılarak saklanır. Google, sunucuları
+işleten veri işleyenimizdir; bkz.
+<a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase gizlilik
+belgeleri</a>. Veriler, Google'ın standart sözleşme maddeleriyle korunarak bulunduğun ülke dışındaki
+Google sunucularında işlenebilir.</p>
+
+<p>Aboneliğinden bağımsız olarak Pump'ın cihazında tuttuğu her şeyi istediğin zaman, ücretsiz
+olarak <em>Profil → Ayarlar → Yedekleme ve senkronizasyon → Verileri dışa aktar</em> bölümünden
+JSON dosyası olarak dışa aktarabilirsin.</p>
+
+<h3 id="food-search">Yemek arama ve barkod tarama</h3>
+<p>Telefonun çevrimiçiyken yemek araması, Fransa merkezli kâr amacı gütmeyen bir dernek tarafından
+yürütülen ücretsiz ve açık bir gıda ürünleri veritabanı olan
+<a href="https://world.openfoodfacts.org" rel="noopener">Open Food Facts</a>'te de ürün arar. Bunun
+için uygulama Open Food Facts'e yemek arama kutusuna yazdığın metni ya da taradığın barkodun
+numarasını ve uygulamanın dil ayarını gönderir. Open Food Facts her uygulamadan istediği için her
+istek uygulamanın adını ve sürümünü de belirtir ve — her internet isteği gibi — telefonunun IP
+adresinden ulaşır.</p>
+<p>Başka hiçbir şey gönderilmez: hesabın, e-posta adresin, kayıtların, hedeflerin ya da herhangi bir
+sağlık veya vücut bilgisi gönderilmez. Open Food Facts bağımsız bir kuruluştur, veri işleyenimiz
+değildir; aldığı istekler için kendi
+<a href="https://world.openfoodfacts.org/privacy" rel="noopener">gizlilik politikası</a> geçerlidir.
+Bağlantı yoksa uygulama yalnızca yerleşik yemek listesinde arar.</p>
+<p>Bu şekilde bulunan bir ürünü kaydettiğinde, çevrimdışı da tekrar bulabilmen için ürünün adı,
+markası ve besin değerleri cihazına kaydedilir. Bir barkod bulunamadıktan sonra kendi yemeğini
+oluşturursan barkod o yemekle birlikte kaydedilir (ve Premium ile diğer kendi yemeklerin gibi
+senkronize edilir). Open Food Facts'in ürün verileri
+<a href="https://opendatacommons.org/licenses/odbl/1-0/" rel="noopener">Open Database License</a>
+kapsamında sunulmaktadır.</p>
+
+<h3 id="testing">Uygulamanın testine katılmak</h3>
+<p>Bu bölüm yalnızca Pump'ın yayın öncesi bir testine katılırsan geçerlidir. Katılmak için bir
+Google Grubu'na katılırsın; grup, katıldığın Google hesabının e-posta adresini tutar. Google Play bu
+grubu, test sürümlerini kimin yükleyebileceğine karar vermek için kullanır. Geri bildirim formumuz
+(bir Google Formu) üzerinden geri bildirim gönderirsen, forma yazdıklarını alırız: mesajın ve
+isteğe bağlı olarak uygulamanın neresinde olduğu, telefon modelin, uygulama dili ve yanıt istersen
+bir e-posta adresi. Form, sen girmedikçe e-posta adresini toplamaz.</p>
+<p>İkisi de Google hizmetidir ve Google bunlar için veri işleyenimizdir. Bu bilgileri yalnızca testi
+yürütmek ve uygulamayı geliştirmek için kullanırız. Katılmak ve geri bildirim göndermek
+gönüllüdür; gruptan istediğin zaman ayrılabilirsin. Geri bildirim yanıtlarını ve grubu, test
+bittikten sonraki altı ay içinde sileriz. Geri bildiriminin daha erken silinmesini istersen
+<a href="mailto:support@pumphq.app">support@pumphq.app</a> adresine yaz.</p>
+
+<h2>4. İşlemenin hukuki dayanağı (Birleşik Krallık/AB kullanıcıları)</h2>
+<ul>
+  <li><strong>Sözleşme</strong> — hesap oluşturma, giriş ve Premium aboneler için bulut
+      senkronizasyonu; çünkü istediğin hizmet budur.</li>
+  <li><strong>Açık rıza</strong> — fotoğraflar dahil sağlık ve fitness bilgileri özel nitelikli
+      kişisel veridir. Bunları girerek gönüllü olarak sağlarsın ve kayıtları ya da hesabını silerek
+      rızanı istediğin zaman geri çekebilirsin. Adım sayma ve kamera erişimi için ayrıca Android'in
+      izin pencereleriyle rıza verilir.</li>
+  <li><strong>Açık rıza</strong> — ikisi de gönüllü olan yayın öncesi teste katılma ve geri bildirim
+      gönderme; bkz. <a href="#testing">Uygulamanın testine katılmak</a>.</li>
+  <li><strong>Meşru menfaat</strong> — yemek arama metnini ya da taranan barkodu Open Food Facts'e
+      göndermek; uygulamanın yerleşik listesinin ötesindeki ürünleri gösterebilmesini sağlayan budur.
+      İstek hiçbir hesap ya da sağlık bilgisi içermez; bkz.
+      <a href="#food-search">Yemek arama ve barkod tarama</a>.</li>
+</ul>
+
+<h2>5. Veriler ne kadar süre saklanır</h2>
+<p>Veriler, sen silene ya da uygulamayı kaldırana kadar cihazında kalır. Uygulamayı kaldırmak yerel
+veritabanını ve uygulamanın özel depolama alanındaki fotoğrafları siler.</p>
+<p>Buluta senkronize edilen veriler, sen onları ya da hesabını silene kadar saklanır. Uygulama
+içinden silmek o verileri hemen kaldırır; e-postayla gelen bir talep 30 gün içinde yerine getirilir.
+Hesabını silmeden tek tek öğeleri silebilirsin &mdash; bkz. bölüm 7.</p>
+
+<h2 id="deleting-your-account">6. Hesabını ve verilerini silmek</h2>
+
+<p><strong>Uygulamada.</strong> <em>Profil → Hesap → Hesabı sil</em> bölümüne git. Şifreni onaylaman
+(ya da Google ile yeniden onaylaman) istenir; ardından aşağıdakiler hemen silinir:</p>
+<ul>
+  <li>antrenmanların, programların ve kişisel rekorların;</li>
+  <li>yemek, su ve kalori geçmişin;</li>
+  <li>bulut depolamadaki kopyaları dahil ölçülerin, tartılmaların ve ilerleme fotoğrafların;</li>
+  <li>hesabının kendisi ve veritabanımızda onun altında saklanan her belge;</li>
+  <li>yukarıdakilerin hepsinin cihazındaki kopyası.</li>
+</ul>
+<p>Bu işlem anında gerçekleşir ve geri alınamaz — kurtarma süresi ya da geri yükleyebileceğimiz bir
+yedek yoktur. Bir kopya saklamak istersen önce verilerini
+<em>Profil → Ayarlar → Yedekleme ve senkronizasyon → Verileri dışa aktar</em> bölümünden dışa
+aktar.</p>
+
+<p><strong>E-postayla.</strong> Uygulamaya erişemiyorsan, hesabına kayıtlı adresten
+<a href="mailto:support@pumphq.app">support@pumphq.app</a> adresine "Delete my account" konusuyla
+yaz. Hesabı ve ilişkili tüm bulut verilerini 30 gün içinde siler ve işlem tamamlandığında sana
+bildiririz.</p>
+
+<p>Uygulamayı kaldırmak yerel kopyayı siler ama hesabını ya da buluta zaten senkronize edilmiş
+verileri silmez — bunun için yukarıdaki iki yoldan birini kullan.</p>
+
+<div class="note">
+<strong>Premium abonelikler ayrıdır.</strong> Pump hesabını silmek Google Play aboneliğini iptal
+etmez. Aboneliği Google Play'de <em>Ödemeler ve abonelikler</em> bölümünden iptal et; aksi hâlde
+ücretlendirme devam eder.
+</div>
+
+<h2 id="deleting-your-data">7. Hesabını silmeden verilerini silmek</h2>
+
+<p>Pump'tan veri silmek için Pump hesabını silmen gerekmez. Kaydettiğin her şey uygulamanın içinden,
+istediğin zaman, öğe öğe silinebilir ve hesabın olduğu gibi kalır.</p>
+
+<p><strong>Adımlar.</strong> Kaldırmak istediğin öğeyi aç ve <em>Sil</em>'i seç:</p>
+<ul>
+  <li><strong>Antrenmanlar, kaydedilen seanslar ve tek tek setler</strong> — <em>Antrenman</em>
+      sekmesi, antrenmanı ya da <em>Geçmiş</em>'ten bir seansı aç, sonra <em>Sil</em>.</li>
+  <li><strong>Antrenman programları</strong> — <em>Antrenman</em> sekmesi, programı aç, sonra
+      <em>Sil</em>.</li>
+  <li><strong>Yemek, öğün, su ve kalori kayıtları</strong> — <em>Kalori</em> sekmesi, günü aç,
+      sonra kaydı sil.</li>
+  <li><strong>Kendi yemeklerin ve kayıtlı öğünler</strong> — <em>Kalori</em> sekmesi,
+      <em>Besinlerim</em> ya da <em>Kayıtlı öğünler</em>'i aç, sonra <em>Sil</em>.</li>
+  <li><strong>Kendi egzersizlerin</strong> — <em>Antrenman</em> sekmesi, <em>Egzersizlerim</em>'i
+      aç, sonra <em>Sil</em>.</li>
+  <li><strong>Ölçüler, tartılmalar, aylık kontroller ve ilerleme fotoğrafları</strong> —
+      <em>Profil &rarr; Ölçümler</em>, kaydı aç, sonra <em>Sil</em>.</li>
+</ul>
+
+<p><strong>Neler silinir.</strong> Bir öğeyi silmek onu cihazından hemen kaldırır. Premium'un varsa
+ve bulut senkronizasyonu açıksa aynı öğe bir sonraki senkronizasyonda bulut kopyamızdan silinir ve
+diğer cihazların senkronize olduğunda onlardan da kaybolur. Premium olmadan hiçbir şey yüklenmemiştir,
+bu yüzden cihazda silmek silme işleminin tamamıdır.</p>
+
+<p><strong>Neler, ne kadar süre saklanır.</strong> Senkronize edilmiş bir öğe silindiğinde, diğer
+cihazlarının öğenin silindiğini öğrenebilmesi için küçük bir silme işareti tutarız. Bir işaret
+yalnızca rastgele bir kimlik ve silinme zamanını içerir &mdash; antrenman, yemek, ölçü ya da fotoğraf
+içeriği ve seni ya da vücudunu tanımlayan hiçbir şey içermez. İşaretler veritabanımızda sana ait
+alanda saklanır ve hesabını sildiğinde tamamen yok edilir (bkz. bölüm 6). Bu işaretler dışında hiçbir
+şey saklamayız: silinen içerik arşivlenmez, yedeklenmez ve ne sen ne de biz onu geri
+getirebiliriz.</p>
+
+<p><strong>E-postayla.</strong> Bunu bizim yapmamızı tercih edersen, hesabına kayıtlı adresten
+<a href="mailto:support@pumphq.app">support@pumphq.app</a> adresine neyin silinmesini istediğini
+anlatarak yaz. 30 gün içinde yerine getirir ve tamamlandığında sana bildiririz. Bunun yerine tüm
+hesabını silmek için bölüm 6'ya bak.</p>
+
+<h2>8. Hakların</h2>
+<p>Birleşik Krallık'ta, AB'de ya da benzer yasaları olan başka bir bölgedeysen kişisel verilerine
+erişme, onları düzeltme, dışa aktarma, işlenmelerini kısıtlama ya da sildirme ve rızanı geri çekme
+hakkın vardır. Uygulamadaki dışa aktarma özelliğini kullan ya da
+<a href="mailto:support@pumphq.app">support@pumphq.app</a> adresine yaz; 30 gün içinde yanıt
+veririz. Yerel veri koruma otoritene şikâyette bulunma hakkın da vardır.</p>
+
+<h2>9. Çocuklar</h2>
+<p>Pump çocuklara yönelik değildir ve 16 yaşın altındaki kişiler için tasarlanmamıştır. Bilerek
+çocuklardan veri toplamayız. Bir çocuğun bize veri sağladığını düşünüyorsan bizimle iletişime geç,
+o verileri sileriz.</p>
+
+<h2>10. Güvenlik</h2>
+<p>Uygulama ile Firebase arasındaki trafik aktarım sırasında şifrelenir (TLS) ve saklanan veriler
+Google tarafından şifrelenir. Erişim kuralları her hesabı yalnızca kendi verileriyle sınırlar. Hiçbir
+sistem kusursuz güvenli değildir, ancak bilgilerini korumak için makul önlemler alırız.</p>
+
+<h2>11. Bu politikadaki değişiklikler</h2>
+<p>Bu politika önemli ölçüde değişirse en üstteki tarih güncellenir ve değişiklik önemliyse bunu
+uygulamada belirtiriz. Bir güncellemeden sonra uygulamayı kullanmaya devam etmen, güncellenmiş
+politikayı kabul ettiğin anlamına gelir.</p>
+
+<h2>12. İletişim</h2>
+<p>Sorular, talepler ya da şikâyetler:
+<a href="mailto:support@pumphq.app">support@pumphq.app</a></p>
+<p>Sefa Levent Gör (PumpHQ), Zimmerstr. 30, 44145 Dortmund, Almanya &middot;
+<a href="/tr/impressum.html">Künye</a></p>
+
+</body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pump — Datenschutzerklärung</title>
+<!-- Translation of /privacy.html. Keep the section ids identical to the English page (the app and
+     other pages link to them), and update this page whenever the English one changes. -->
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    background: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e6e6; background: #131313; }
+    code { background: #262626; }
+    th, td { border-color: #333 !important; }
+    .note { background: #1e1e1e; border-color: #3a3a3a; }
+  }
+  h1 { font-size: 1.9rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.2rem; margin-top: 2.25rem; }
+  h3 { font-size: 1.05rem; margin-top: 1.75rem; }
+  .updated { color: #666; font-size: .9rem; margin-top: 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { border: 1px solid #ddd; padding: .5rem .6rem; text-align: left; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: #f2f2f2; padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  .note { background: #f7f7f7; border: 1px solid #e2e2e2; border-radius: 8px; padding: .85rem 1rem; }
+  .wrap { overflow-x: auto; }
+</style>
+<!-- lang:head -->
+<link rel="alternate" hreflang="en" href="https://pumphq.app/privacy.html">
+<link rel="alternate" hreflang="tr" href="https://pumphq.app/tr/privacy.html">
+<link rel="alternate" hreflang="de" href="https://pumphq.app/de/privacy.html">
+<link rel="alternate" hreflang="es" href="https://pumphq.app/es/privacy.html">
+<link rel="alternate" hreflang="fr" href="https://pumphq.app/fr/privacy.html">
+<link rel="alternate" hreflang="x-default" href="https://pumphq.app/privacy.html">
+<style>.lang{font-size:.85rem;text-align:right;margin:-1.5rem 0 1.5rem}.lang a{margin-left:.65rem;text-decoration:none;opacity:.7}.lang a:hover{opacity:1;text-decoration:underline}.lang a[aria-current]{opacity:1;font-weight:700}</style>
+<!-- /lang:head -->
+</head>
+<body>
+<!-- lang:nav -->
+<nav class="lang" aria-label="Language"><a href="/privacy.html" hreflang="en" lang="en" title="English">EN</a><a href="/tr/privacy.html" hreflang="tr" lang="tr" title="Türkçe">TR</a><a href="/de/privacy.html" hreflang="de" lang="de" title="Deutsch" aria-current="page">DE</a><a href="/es/privacy.html" hreflang="es" lang="es" title="Español">ES</a><a href="/fr/privacy.html" hreflang="fr" lang="fr" title="Français">FR</a></nav>
+<!-- /lang:nav -->
+
+<h1>Pump — Datenschutzerklärung</h1>
+<p class="updated">Zuletzt aktualisiert: 17. Oktober 2026</p>
+
+<p class="note">Diese Übersetzung dient deiner Bequemlichkeit. Weicht sie von der
+<a href="/privacy.html">englischen Fassung</a> ab, gilt die englische Fassung.</p>
+
+<p>Pump ist eine App, mit der du Training und Ernährung erfasst. Diese Erklärung beschreibt, was die
+App aufzeichnet, was dein Handy verlässt und wie du deine Daten zurückbekommst oder löschen lässt.</p>
+
+<p>Die App wird entwickelt und betrieben von <strong>PumpHQ</strong>, der Geschäftsbezeichnung von
+Sefa Levent Gör, Zimmerstr. 30, 44145 Dortmund, Deutschland, erreichbar unter
+<a href="mailto:support@pumphq.app">support@pumphq.app</a>. Im Sinne der DSGVO (bzw. UK GDPR) ist
+PumpHQ Verantwortlicher für die unten beschriebenen Informationen.</p>
+
+<div class="note">
+<strong>Kurz gesagt.</strong> Pump hat keine Werbung, keine Analyse und keinerlei Tracker von
+Drittanbietern. Nutzt du die App ohne Konto, bleibt alles, was du einträgst, auf deinem Handy. Daten
+werden nur in die Cloud hochgeladen, wenn du angemeldet bist <em>und</em> ein aktives
+Premium-Abo hast. Das Einzige, was bei allen das Handy verlässt, ist die Lebensmittelsuche: Was du
+eintippst oder welchen Barcode du scannst, wird an Open Food Facts gesendet, um passende Produkte zu
+finden — niemals deine Einträge oder Kontodaten (siehe
+<a href="#food-search">Lebensmittelsuche und Barcode-Scan</a>).
+</div>
+
+<h2>1. Was Pump erfasst</h2>
+
+<div class="wrap">
+<table>
+  <tr><th>Kategorie</th><th>Was dazugehört</th><th>Wozu</th></tr>
+  <tr>
+    <td>Kontodaten</td>
+    <td>Deine E-Mail-Adresse, dein Anzeigename und — wenn du dich mit Google anmeldest — das
+        Profilbild deines Google-Kontos.</td>
+    <td>Um dein Konto anzulegen, dich anzumelden und deine Daten auf einem neuen Gerät
+        wiederherzustellen.</td>
+  </tr>
+  <tr>
+    <td>Gesundheits- und Fitnessdaten</td>
+    <td>Alter, Geschlecht, Größe, Gewicht, Körperfettanteil und Körpermaße; deine Workouts
+        (Übungen, Sätze, Wiederholungen und Gewichte); Ernährungs- und Kalorieneinträge;
+        Wasseraufnahme; tägliche Schritte; und die Ziele, die du festlegst.</td>
+    <td>Das ist der Inhalt der App — genau dafür gibt es Pump: um das zu erfassen und dir wieder
+        anzuzeigen.</td>
+  </tr>
+  <tr>
+    <td>Fotos</td>
+    <td>Fortschrittsfotos aus deinen Check-ins, Bilder, die du eigenen Übungen hinzufügst, und
+        dein Profilbild.</td>
+    <td>Werden nur gespeichert, wenn du sie hinzufügst. Sie dienen ausschließlich dazu, sie dir in
+        der App anzuzeigen.</td>
+  </tr>
+  <tr>
+    <td>Abo-Status</td>
+    <td>Ob du ein aktives Premium-Abo hast.</td>
+    <td>Um Premium-Funktionen freizuschalten.</td>
+  </tr>
+</table>
+</div>
+
+<p>Pump fragt die Berechtigung <code>ACTIVITY_RECOGNITION</code> an, um den eingebauten
+Schrittzähler deines Handys zu lesen, und die Berechtigung <code>CAMERA</code>, wenn du in der App
+ein Fortschritts- oder Übungsfoto aufnimmst. Beide sind optional — lehnst du sie ab, funktioniert
+der Rest der App ganz normal.</p>
+
+<p>Der Barcode-Scanner nutzt nicht die Kameraberechtigung von Pump. Er wird von den Google
+Play-Diensten bereitgestellt: Sie zeigen das Kamerabild an, lesen den Barcode auf deinem Gerät und
+geben an Pump nur die Barcode-Nummer weiter. Pump erhält das Kamerabild nie.</p>
+
+<h2>2. Was Pump <em>nicht</em> erfasst</h2>
+<ul>
+  <li>Keine Werbe-IDs und keinerlei Werbung.</li>
+  <li>Keine Analyse oder Nutzungsverfolgung. Die App enthält kein Analyse- oder Absturzbericht-SDK.</li>
+  <li>Keine Standortdaten.</li>
+  <li>Keine Kontakte, Kalender, Anrufprotokolle oder Nachrichten.</li>
+  <li>Keine Zahlungsdaten. Käufe wickelt ausschließlich Google Play ab; Pump sieht deine Karten-
+      oder Rechnungsdaten nie.</li>
+  <li>Deine Daten werden niemals verkauft, vermietet oder an Dritte für deren eigene Zwecke
+      weitergegeben.</li>
+</ul>
+
+<h2>3. Wann deine Daten dein Handy verlassen</h2>
+
+<p><strong>Ohne Konto</strong> speichert Pump alles ausschließlich in einer Datenbank auf deinem
+Gerät. Nichts, was du einträgst, wird hochgeladen. (Ausnahme ist die unten beschriebene
+Lebensmittelsuche — sie sendet Suchtext, nicht deine Daten.)</p>
+
+<p><strong>Mit Konto, aber ohne Premium</strong> speichert Firebase Authentication nur deine
+Anmeldedaten. Deine Workouts, Mahlzeiten, Maße und Fotos bleiben auf deinem Gerät.</p>
+
+<p><strong>Mit Konto und aktivem Premium-Abo</strong> synchronisiert die App deine Daten, damit du
+auf ein neues Handy wechseln kannst, ohne etwas zu verlieren. Die Synchronisierung läuft automatisch
+beim Öffnen und Schließen der App, und du kannst sie unter
+<em>Profil → Einstellungen → Backup &amp; Sync</em> auch manuell starten.</p>
+
+<p>Hochgeladene Daten werden in deinem eigenen privaten Bereich von Google Firebase (unter einem
+Pfad, der an deine Konto-ID gebunden ist) mit Cloud Firestore und Cloud Storage for Firebase
+gespeichert. Google ist unser Auftragsverarbeiter und betreibt die Server; siehe die
+<a href="https://firebase.google.com/support/privacy" rel="noopener">Datenschutzhinweise von
+Firebase</a>. Daten können auf Google-Servern außerhalb deines Landes verarbeitet werden,
+abgesichert durch die Standardvertragsklauseln von Google.</p>
+
+<p>Unabhängig vom Abo kannst du alles, was Pump lokal speichert, jederzeit kostenlos als JSON-Datei
+exportieren: <em>Profil → Einstellungen → Backup &amp; Sync → Daten exportieren</em>.</p>
+
+<h3 id="food-search">Lebensmittelsuche und Barcode-Scan</h3>
+<p>Ist dein Handy online, sucht die Lebensmittelsuche auch nach Produkten in
+<a href="https://world.openfoodfacts.org" rel="noopener">Open Food Facts</a>, einer freien, offenen
+Datenbank für Lebensmittel, die von einem gemeinnützigen Verein mit Sitz in Frankreich betrieben
+wird. Dafür sendet die App an Open Food Facts den Text, den du ins Suchfeld eintippst, oder die
+Nummer eines gescannten Barcodes, sowie die eingestellte App-Sprache. Jede Anfrage nennt außerdem
+Name und Version der App, wie Open Food Facts es von allen Apps verlangt, und erreicht den Dienst —
+wie jede Internetanfrage — von der IP-Adresse deines Handys.</p>
+<p>Sonst wird nichts gesendet: weder dein Konto noch deine E-Mail-Adresse, deine Einträge, deine
+Ziele oder irgendwelche Gesundheits- oder Körperdaten. Open Food Facts ist eine unabhängige
+Organisation und nicht unser Auftragsverarbeiter; für die Anfragen, die dort eingehen, gilt deren
+eigene <a href="https://world.openfoodfacts.org/privacy" rel="noopener">Datenschutzerklärung</a>.
+Ohne Verbindung durchsucht die App einfach ihre eingebaute Lebensmittelliste.</p>
+<p>Wenn du ein so gefundenes Produkt einträgst, werden Name, Marke und Nährwerte auf deinem Gerät
+gespeichert, damit du es auch offline wiederfindest. Legst du ein eigenes Lebensmittel an, nachdem
+ein Barcode nicht gefunden wurde, wird der Barcode mit diesem Lebensmittel gespeichert (und mit
+Premium wie deine anderen eigenen Lebensmittel synchronisiert). Produktdaten von Open Food Facts
+stehen unter der
+<a href="https://opendatacommons.org/licenses/odbl/1-0/" rel="noopener">Open Database License</a>.</p>
+
+<h3 id="testing">Teilnahme an einem Test der App</h3>
+<p>Das gilt nur, wenn du an einem Vorab-Test von Pump teilnimmst. Dazu trittst du einer Google Group
+bei, die die E-Mail-Adresse des Google-Kontos speichert, mit dem du beitrittst; Google Play nutzt
+diese Gruppe, um festzulegen, wer Testversionen installieren darf. Wenn du über unser
+Feedback-Formular (ein Google-Formular) Feedback sendest, erhalten wir, was du dort eingibst: deine
+Nachricht und optional, wo in der App es passiert ist, dein Handymodell, die App-Sprache und eine
+E-Mail-Adresse, falls du eine Antwort möchtest. Das Formular erfasst deine E-Mail-Adresse nur, wenn
+du sie selbst einträgst.</p>
+<p>Beides sind Google-Dienste, und Google ist dafür unser Auftragsverarbeiter. Wir nutzen diese
+Informationen nur, um den Test durchzuführen und die App zu verbessern. Teilnahme und Feedback sind
+freiwillig; du kannst die Gruppe jederzeit verlassen, und wir löschen Feedback-Antworten und die
+Gruppe innerhalb von sechs Monaten nach Ende des Tests. Soll dein Feedback früher gelöscht werden,
+schreib an <a href="mailto:support@pumphq.app">support@pumphq.app</a>.</p>
+
+<h2>4. Rechtsgrundlage der Verarbeitung (Nutzer in der EU/im Vereinigten Königreich)</h2>
+<ul>
+  <li><strong>Vertrag</strong> — Kontoerstellung, Anmeldung und Cloud-Sync für Premium-Abonnenten,
+      weil das der Dienst ist, den du angefordert hast.</li>
+  <li><strong>Einwilligung</strong> — Gesundheits- und Fitnessdaten, einschließlich Fotos, sind eine
+      besondere Kategorie personenbezogener Daten. Du gibst sie freiwillig ein und kannst deine
+      Einwilligung jederzeit widerrufen, indem du die Einträge oder dein Konto löschst.
+      Schrittzählung und Kamerazugriff werden zusätzlich über die Berechtigungsabfragen von Android
+      erteilt.</li>
+  <li><strong>Einwilligung</strong> — die Teilnahme an einem Vorab-Test und das Senden von Feedback,
+      beides freiwillig; siehe <a href="#testing">Teilnahme an einem Test der App</a>.</li>
+  <li><strong>Berechtigtes Interesse</strong> — das Senden deines Suchtexts oder eines gescannten
+      Barcodes an Open Food Facts; nur so kann die App Produkte über ihre eingebaute Liste hinaus
+      anzeigen. Die Anfrage enthält keine Konto- oder Gesundheitsdaten; siehe
+      <a href="#food-search">Lebensmittelsuche und Barcode-Scan</a>.</li>
+</ul>
+
+<h2>5. Wie lange Daten gespeichert werden</h2>
+<p>Daten bleiben auf deinem Gerät, bis du sie löschst oder die App deinstallierst. Beim
+Deinstallieren werden die lokale Datenbank und alle Fotos im privaten Speicher der App entfernt.</p>
+<p>In die Cloud synchronisierte Daten werden gespeichert, bis du sie oder dein Konto löschst. Löschen
+in der App entfernt diese Daten sofort; eine Anfrage per E-Mail wird innerhalb von 30 Tagen
+bearbeitet. Einzelne Einträge kannst du löschen, ohne dein Konto zu löschen &mdash; siehe
+Abschnitt 7.</p>
+
+<h2 id="deleting-your-account">6. Konto und Daten löschen</h2>
+
+<p><strong>In der App.</strong> Gehe zu <em>Profil → Konto → Konto löschen</em>. Du wirst gebeten,
+dein Passwort zu bestätigen (oder dich erneut mit Google zu bestätigen); danach wird Folgendes sofort
+gelöscht:</p>
+<ul>
+  <li>deine Workouts, Programme und persönlichen Bestleistungen;</li>
+  <li>dein Ernährungs-, Wasser- und Kalorienverlauf;</li>
+  <li>deine Maße, Wiegungen und Fortschrittsfotos, einschließlich der Kopien im Cloud-Speicher;</li>
+  <li>dein Konto selbst und jedes Dokument, das darunter in unserer Datenbank gespeichert ist;</li>
+  <li>die Kopie all dessen auf deinem Gerät.</li>
+</ul>
+<p>Das geschieht sofort und ist endgültig — es gibt keine Wiederherstellungsfrist und kein Backup,
+aus dem wir etwas zurückholen könnten. Möchtest du eine Kopie behalten, exportiere deine Daten vorher
+unter <em>Profil → Einstellungen → Backup &amp; Sync → Daten exportieren</em>.</p>
+
+<p><strong>Per E-Mail.</strong> Kommst du nicht in die App, schreib von der mit deinem Konto
+registrierten Adresse an <a href="mailto:support@pumphq.app">support@pumphq.app</a> mit dem Betreff
+„Delete my account“. Wir löschen das Konto und alle zugehörigen Cloud-Daten innerhalb von 30 Tagen
+und bestätigen dir, wenn es erledigt ist.</p>
+
+<p>Das Deinstallieren der App entfernt die lokale Kopie, löscht aber weder dein Konto noch bereits in
+die Cloud synchronisierte Daten — nutze dafür einen der beiden Wege oben.</p>
+
+<div class="note">
+<strong>Premium-Abos sind davon getrennt.</strong> Das Löschen deines Pump-Kontos kündigt kein
+Google-Play-Abo. Kündige es in Google Play unter <em>Zahlungen &amp; Abos</em>, sonst wird es
+weiter abgerechnet.
+</div>
+
+<h2 id="deleting-your-data">7. Daten löschen, ohne das Konto zu löschen</h2>
+
+<p>Du musst dein Pump-Konto nicht löschen, um Daten aus Pump zu entfernen. Alles, was du einträgst,
+kannst du jederzeit einzeln in der App löschen, und dein Konto bleibt genau so, wie es ist.</p>
+
+<p><strong>So geht's.</strong> Öffne den Eintrag, den du entfernen möchtest, und wähle
+<em>Löschen</em>:</p>
+<ul>
+  <li><strong>Workouts, erfasste Einheiten und einzelne Sätze</strong> — Tab <em>Workouts</em>,
+      das Workout oder eine Einheit aus dem <em>Verlauf</em> öffnen, dann <em>Löschen</em>.</li>
+  <li><strong>Trainingsprogramme</strong> — Tab <em>Workouts</em>, das Programm öffnen, dann
+      <em>Löschen</em>.</li>
+  <li><strong>Lebensmittel-, Mahlzeiten-, Wasser- und Kalorieneinträge</strong> — Tab
+      <em>Kalorien</em>, den Tag öffnen, dann den Eintrag löschen.</li>
+  <li><strong>Eigene Lebensmittel und gespeicherte Mahlzeiten</strong> — Tab <em>Kalorien</em>,
+      <em>Meine Lebensmittel</em> oder <em>Gespeicherte Mahlzeiten</em> öffnen, dann
+      <em>Löschen</em>.</li>
+  <li><strong>Eigene Übungen</strong> — Tab <em>Workouts</em>, <em>Meine Übungen</em> öffnen, dann
+      <em>Löschen</em>.</li>
+  <li><strong>Maße, Wiegungen, monatliche Check-ins und Fortschrittsfotos</strong> —
+      <em>Profil &rarr; Maße</em>, den Eintrag öffnen, dann <em>Löschen</em>.</li>
+</ul>
+
+<p><strong>Was gelöscht wird.</strong> Ein gelöschter Eintrag verschwindet sofort von deinem Gerät.
+Hast du Premium und ist der Cloud-Sync eingeschaltet, wird derselbe Eintrag bei der nächsten
+Synchronisierung aus unserer Cloud-Kopie entfernt und verschwindet von deinen anderen Geräten, sobald
+diese synchronisieren. Ohne Premium wurde nie etwas hochgeladen, das Löschen auf dem Gerät ist also
+die vollständige Löschung.</p>
+
+<p><strong>Was aufbewahrt wird, und wie lange.</strong> Wird ein synchronisierter Eintrag gelöscht,
+behalten wir eine kleine Löschmarkierung, damit deine anderen Geräte erfahren, dass der Eintrag weg
+ist. Eine Markierung enthält nur eine zufällige Kennung und den Zeitpunkt der Löschung &mdash; keine
+Workout-, Lebensmittel-, Maß- oder Fotoinhalte und nichts, was dich oder deinen Körper beschreibt.
+Markierungen liegen in deinem eigenen Bereich unserer Datenbank und werden vollständig vernichtet,
+wenn du dein Konto löschst (siehe Abschnitt 6). Abgesehen von diesen Markierungen behalten wir
+nichts: Gelöschte Inhalte werden weder archiviert noch gesichert und können weder von dir noch von
+uns wiederhergestellt werden.</p>
+
+<p><strong>Per E-Mail.</strong> Möchtest du, dass wir das für dich erledigen, schreib von der mit
+deinem Konto registrierten Adresse an <a href="mailto:support@pumphq.app">support@pumphq.app</a> und
+beschreibe, was entfernt werden soll. Wir erledigen das innerhalb von 30 Tagen und bestätigen es dir.
+Um stattdessen dein ganzes Konto zu löschen, siehe Abschnitt 6.</p>
+
+<h2>8. Deine Rechte</h2>
+<p>Bist du in der EU, im Vereinigten Königreich oder in einer anderen Region mit vergleichbarem
+Recht, hast du das Recht auf Auskunft, Berichtigung, Datenübertragbarkeit, Einschränkung der
+Verarbeitung und Löschung deiner personenbezogenen Daten sowie auf Widerruf deiner Einwilligung.
+Nutze die Exportfunktion in der App oder schreib an
+<a href="mailto:support@pumphq.app">support@pumphq.app</a>; wir antworten innerhalb von 30 Tagen.
+Außerdem hast du das Recht, dich bei deiner örtlichen Datenschutzaufsichtsbehörde zu beschweren.</p>
+
+<h2>9. Kinder</h2>
+<p>Pump richtet sich nicht an Kinder und ist nicht für Personen unter 16 Jahren bestimmt. Wir
+erheben wissentlich keine Daten von Kindern. Glaubst du, dass uns ein Kind Daten übermittelt hat,
+kontaktiere uns, und wir löschen sie.</p>
+
+<h2>10. Sicherheit</h2>
+<p>Der Datenverkehr zwischen der App und Firebase ist bei der Übertragung verschlüsselt (TLS), und
+gespeicherte Daten werden von Google verschlüsselt abgelegt. Zugriffsregeln beschränken jedes Konto
+auf seine eigenen Daten. Kein System ist vollkommen sicher, aber wir treffen angemessene Maßnahmen,
+um deine Informationen zu schützen.</p>
+
+<h2>11. Änderungen dieser Erklärung</h2>
+<p>Ändert sich diese Erklärung wesentlich, wird das Datum oben aktualisiert, und bei bedeutenden
+Änderungen weisen wir in der App darauf hin. Nutzt du die App nach einer Aktualisierung weiter,
+akzeptierst du die überarbeitete Erklärung.</p>
+
+<h2>12. Kontakt</h2>
+<p>Fragen, Anfragen oder Beschwerden:
+<a href="mailto:support@pumphq.app">support@pumphq.app</a></p>
+<p>Sefa Levent Gör (PumpHQ), Zimmerstr. 30, 44145 Dortmund, Deutschland &middot;
+<a href="/de/impressum.html">Impressum</a></p>
+
+</body>
+</html>
