@@ -1,0 +1,143 @@
+/* Shared styles for the text pages (privacy, testers, Impressum) in every language.
+   Same palette, font and chrome as the landing page (docs/index.html), so moving between pages
+   doesn't feel like leaving the site. Text lives on beige "paper" because long legal copy reads
+   more easily dark-on-light; the title band, navbar and footer stay black like the landing page. */
+
+@font-face {
+  font-family: "Manrope"; font-style: normal; font-weight: 200 800; font-display: swap;
+  src: url(/assets/fonts/manrope-latin.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Manrope"; font-style: normal; font-weight: 200 800; font-display: swap;
+  src: url(/assets/fonts/manrope-latin-ext.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+:root {
+  color-scheme: dark;
+  --black: #0E0E0E;
+  --black-2: #161616;
+  --line-dark: #262626;
+  --beige: #EDE6DA;
+  --paper: #F6F1E8;
+  --line-light: #DDD3C3;
+  --ink: #151515;
+  --ink-soft: #55504A;
+  --cream-soft: #A9A296;
+  --green: #34D399;
+  --orange: #FF8C42;
+  --violet: #7C6FFF;
+  --grad: linear-gradient(120deg, var(--green), var(--orange));
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0;
+  background: var(--black);
+  color: var(--beige);
+  font: 400 16px/1.7 "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; }
+a:focus-visible, .btn:focus-visible, .button:focus-visible { outline: 2px solid var(--violet); outline-offset: 3px; }
+.container { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+@media (min-width: 720px) { .container { padding: 0 32px; } }
+
+/* Language switcher (markup owned by tools/site/lang_nav.py), restyled into a slim top strip. */
+body > nav.lang {
+  margin: 0; padding: 8px 16px; font-size: .78rem; letter-spacing: .04em;
+  text-align: right; background: var(--black); color: var(--cream-soft);
+}
+body > nav.lang a { margin-left: .9rem; opacity: .75; }
+
+/* ── Navbar ── */
+.nav {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(14, 14, 14, .78);
+  -webkit-backdrop-filter: saturate(160%) blur(14px);
+  backdrop-filter: saturate(160%) blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, .06);
+}
+.nav .container { display: flex; align-items: center; gap: 24px; height: 64px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 800; font-size: 1.15rem; letter-spacing: -.02em; }
+.brand img { width: 30px; height: 30px; border-radius: 8px; }
+.nav .btn { margin-left: auto; padding: 10px 18px; font-size: .9rem; }
+
+.btn, .button {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 13px 24px; border-radius: 999px;
+  background: var(--grad); color: var(--black);
+  font-weight: 700; text-decoration: none; letter-spacing: -.01em;
+  transition: transform .25s ease, box-shadow .25s ease;
+  box-shadow: 0 6px 24px -10px rgba(52, 211, 153, .55);
+}
+.btn:hover, .button:hover { transform: translateY(-2px); box-shadow: 0 12px 30px -10px rgba(255, 140, 66, .6); }
+
+/* ── Title band ── */
+.page-hero { position: relative; padding: 64px 0 56px; overflow: hidden; }
+@media (min-width: 720px) { .page-hero { padding: 96px 0 80px; } }
+.page-hero::before { /* a faint version of the landing page's glow */
+  content: ""; position: absolute; right: -10%; top: -40%; width: 60%; height: 180%;
+  background:
+    radial-gradient(closest-side at 40% 50%, rgba(52, 211, 153, .16), transparent),
+    radial-gradient(closest-side at 70% 60%, rgba(124, 111, 255, .16), transparent);
+  filter: blur(30px); pointer-events: none;
+}
+.page-hero .container { position: relative; max-width: calc(46rem + 64px); }
+.page-hero h1 {
+  margin: 0; font-size: clamp(2.2rem, 7vw, 3.6rem); font-weight: 800;
+  letter-spacing: -.035em; line-height: 1.05;
+}
+.page-hero p { margin: 18px 0 0; font-size: 1.05rem; font-weight: 300; color: var(--cream-soft); }
+.page-hero .rule { height: 2px; width: 56px; border-radius: 2px; background: var(--grad); margin-top: 28px; }
+
+/* ── Text on paper ── */
+.doc { background: var(--beige); color: var(--ink); padding: 56px 0 96px; }
+@media (min-width: 720px) { .doc { padding: 80px 0 128px; } }
+.doc .container { max-width: calc(46rem + 64px); }
+.doc h2 {
+  margin: 3rem 0 .9rem; padding-top: 1.6rem; border-top: 1px solid var(--line-light);
+  font-size: 1.35rem; font-weight: 800; letter-spacing: -.02em; line-height: 1.25;
+}
+.doc .container > :first-child { margin-top: 0; }
+.doc .container > h2:first-child { border-top: 0; padding-top: 0; }
+.doc h3 { margin: 2rem 0 .5rem; font-size: 1.08rem; font-weight: 700; letter-spacing: -.01em; }
+.doc p { margin: 0 0 1rem; }
+.doc ul, .doc ol { padding-left: 1.2rem; margin: 0 0 1rem; }
+.doc li { margin: .5rem 0; }
+.doc li::marker { color: #1A6B4E; font-weight: 700; }
+.doc a { text-decoration-color: rgba(21, 21, 21, .35); text-underline-offset: 3px; }
+.doc a:hover { text-decoration-color: currentColor; }
+.doc .button { color: var(--black); margin: .5rem 0; }
+.doc strong { font-weight: 700; }
+.doc address { font-style: normal; line-height: 1.8; margin-bottom: 1rem; }
+.muted, .updated { color: var(--ink-soft); }
+.updated { font-size: .92rem; }
+.doc code { background: rgba(21, 21, 21, .07); padding: .1rem .35rem; border-radius: 5px; font-size: .9em; }
+
+/* Callouts: .note on the privacy page, .card on the testers page. */
+.doc .note, .doc .card {
+  position: relative; margin: 1.75rem 0; padding: 1.25rem 1.4rem 1.25rem 1.6rem;
+  background: var(--paper); border: 1px solid var(--line-light); border-radius: 18px; overflow: hidden;
+}
+.doc .note::before, .doc .card::before {
+  content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--grad);
+}
+
+/* Tables (the privacy page's data tables). The page's own .wrap scrolls them sideways on phones. */
+.doc .wrap { overflow-x: auto; margin: 1.25rem 0; border-radius: 14px; border: 1px solid var(--line-light); background: var(--paper); }
+.doc table { border-collapse: collapse; width: 100%; font-size: .93rem; }
+.doc th, .doc td { border-bottom: 1px solid var(--line-light); padding: .7rem .85rem; text-align: left; vertical-align: top; }
+.doc tr:last-child td { border-bottom: 0; }
+.doc th { font-weight: 700; background: rgba(21, 21, 21, .04); }
+
+/* ── Footer ── */
+footer.site { padding: 56px 0 48px; border-top: 1px solid var(--line-dark); font-size: .9rem; color: var(--cream-soft); }
+footer.site .container { display: grid; gap: 28px; }
+@media (min-width: 820px) { footer.site .container { grid-template-columns: auto 1fr auto; align-items: center; } }
+.foot-links { display: flex; flex-wrap: wrap; gap: 10px 24px; }
+@media (min-width: 820px) { .foot-links { justify-content: center; } }
+.foot-links a { text-decoration: none; transition: color .2s; }
+.foot-links a:hover { color: var(--beige); }
