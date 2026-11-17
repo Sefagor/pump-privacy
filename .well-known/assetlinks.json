@@ -1,0 +1,14 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.sefagor.pump",
+      "sha256_cert_fingerprints": [
+        "DA:BA:53:A6:69:D0:8B:C4:48:CF:A6:91:4D:F9:BA:4C:3F:0C:57:2A:25:75:8E:F6:C1:CA:A9:25:4F:3A:2E:4D",
+        "A5:91:B6:A7:B1:B0:55:37:E9:AE:DA:88:7D:6E:4C:B9:36:14:38:79:82:58:6D:F7:60:E1:A4:9B:D8:0E:3F:D4",
+        "6F:92:DC:99:38:37:58:5C:2F:25:D7:D4:4C:8A:6F:0C:98:3B:3B:AC:F8:34:87:F5:D8:DB:91:C9:25:18:B2:3F"
+      ]
+    }
+  }
+]

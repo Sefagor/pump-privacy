@@ -47,7 +47,7 @@
 <header class="page-hero">
   <div class="container">
     <h1>Política de privacidad</h1>
-<p>Última actualización: 28 de octubre de 2026</p>
+<p>Última actualización: 17 de noviembre de 2026</p>
     <div class="rule"></div>
   </div>
 </header>
@@ -73,6 +73,7 @@ sale del móvil para todo el mundo es la búsqueda de alimentos: lo que escribes
 que escaneas, se envía a Open Food Facts para encontrar productos, nunca tus registros ni los datos
 de tu cuenta (consulta <a href="#food-search">Búsqueda de alimentos y escaneo de códigos de
 barras</a>).
+Si compartes un plan de dieta mediante un enlace, ese plan también se sube (consulta <a href="#shared-plans">Planes de dieta compartidos</a>).
 </div>
 
 <h2>1. Información que registra Pump</h2>
@@ -168,6 +169,21 @@ porque no se encontró un código de barras, el código se guarda con ese alimen
 sincroniza como tus demás alimentos propios). Los datos de productos de Open Food Facts están
 disponibles bajo la
 <a href="https://opendatacommons.org/licenses/odbl/1-0/" rel="noopener">Open Database License</a>.</p>
+
+<h3 id="shared-plans">Planes de dieta compartidos</h3>
+<p>Puedes compartir un plan de dieta como archivo o mediante un enlace. Un archivo va donde tú lo envíes;
+nunca lo vemos. Cuando compartes <strong>mediante un enlace</strong>, el nombre y el contenido del plan
+(comidas, alimentos, cantidades y valores nutricionales) se suben a Cloud Firestore junto con el ID de tu
+cuenta, para que solo tú puedas ver y quitar tus enlaces. Cualquiera que tenga el enlace puede ver ese plan,
+en la app o en pumphq.app, sin iniciar sesión. El plan no lleva tu nombre, tu correo ni otros datos sobre
+ti, y los enlaces no se listan ni se pueden buscar.</p>
+<p>Al abrir un enlace en pumphq.app, el navegador pide ese único plan a Google Firestore, por lo que la
+petición llega a Google desde tu dirección IP; no se carga nada más de otros servidores ni se guarda nada en
+el navegador. Si denuncias un plan compartido, recibimos el ID del enlace y el motivo que escribas, pero no
+quién envió la denuncia.</p>
+<p>Un plan compartido sigue en línea hasta que quitas su enlace en <em>Planes de dieta → Mis enlaces
+compartidos</em>, hasta que eliminas tu cuenta (todos tus enlaces se eliminan con ella) o hasta que lo
+retiramos tras una denuncia. Las copias que otros ya hayan añadido a su app son suyas.</p>
 
 <h3 id="testing">Participar en una prueba de la app</h3>
 <p>Esto solo se aplica si participas en una prueba previa al lanzamiento de Pump. Para participar te

@@ -47,7 +47,7 @@
 <header class="page-hero">
   <div class="container">
     <h1>Gizlilik Politikası</h1>
-<p>Son güncelleme: 28 Ekim 2026</p>
+<p>Son güncelleme: 17 Kasım 2026</p>
     <div class="rule"></div>
   </div>
 </header>
@@ -74,6 +74,7 @@ yaparsan <em>ve</em> etkin bir Premium aboneliğin varsa buluta yüklenir. Herke
 çıkan tek şey yemek aramasıdır: yazdığın metin ya da taradığın barkod, eşleşen ürünleri bulmak için
 Open Food Facts'e gönderilir; kayıtların ya da hesap bilgilerin asla gönderilmez (bkz.
 <a href="#food-search">Yemek arama ve barkod tarama</a>).
+Bir diyet planını bağlantıyla paylaşırsan o plan da yüklenir (bkz. <a href="#shared-plans">Paylaşılan diyet planları</a>).
 </div>
 
 <h2>1. Pump'ın kaydettiği bilgiler</h2>
@@ -171,6 +172,20 @@ oluşturursan barkod o yemekle birlikte kaydedilir (ve Premium ile diğer kendi 
 senkronize edilir). Open Food Facts'in ürün verileri
 <a href="https://opendatacommons.org/licenses/odbl/1-0/" rel="noopener">Open Database License</a>
 kapsamında sunulmaktadır.</p>
+
+<h3 id="shared-plans">Paylaşılan diyet planları</h3>
+<p>Bir diyet planını dosya olarak ya da bağlantıyla paylaşabilirsin. Dosya, gönderdiğin yere gider; biz onu
+görmeyiz. <strong>Bağlantıyla</strong> paylaştığında planın adı ve içeriği (öğünler, yiyecekler, miktarlar ve
+besin değerleri), bağlantılarını yalnızca senin listeleyip kaldırabilmen için hesap kimliğinle birlikte Cloud
+Firestore'a yüklenir. Bağlantıya sahip olan herkes o planı uygulamada ya da pumphq.app'te, oturum açmadan
+görebilir. Plan senin adını, e-postanı ya da seninle ilgili başka bir bilgiyi içermez; bağlantılar
+listelenmez ve aranamaz.</p>
+<p>pumphq.app'te bir bağlantı açıldığında tarayıcı yalnızca o planı Google Firestore'dan ister; bu istek
+Google'a IP adresinden ulaşır. Başka sunuculardan bir şey yüklenmez ve tarayıcında bir şey saklanmaz. Paylaşılan
+bir planı bildirirsen bağlantının kimliğini ve yazdığın gerekçeyi alırız, bildirimi kimin gönderdiğini değil.</p>
+<p>Paylaşılan bir plan, bağlantısını <em>Diyet planları → Paylaştığım bağlantılar</em> bölümünden kaldırana,
+hesabını silene (tüm bağlantıların onunla birlikte silinir) ya da bir bildirimden sonra biz kaldırana kadar
+çevrimiçi kalır. Başkalarının uygulamasına eklediği kopyalar onlarındır.</p>
 
 <h3 id="testing">Uygulamanın testine katılmak</h3>
 <p>Bu bölüm yalnızca Pump'ın yayın öncesi bir testine katılırsan geçerlidir. Katılmak için bir

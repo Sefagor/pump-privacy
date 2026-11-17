@@ -47,7 +47,7 @@
 <header class="page-hero">
   <div class="container">
     <h1>Datenschutzerklärung</h1>
-<p>Zuletzt aktualisiert: 28. Oktober 2026</p>
+<p>Zuletzt aktualisiert: 17. November 2026</p>
     <div class="rule"></div>
   </div>
 </header>
@@ -72,6 +72,7 @@ werden nur in die Cloud hochgeladen, wenn du angemeldet bist <em>und</em> ein ak
 Premium-Abo hast. Das Einzige, was bei allen das Handy verlässt, ist die Lebensmittelsuche: Was du
 eintippst oder welchen Barcode du scannst, wird an Open Food Facts gesendet, um passende Produkte zu finden, aber niemals deine Einträge oder Kontodaten (siehe
 <a href="#food-search">Lebensmittelsuche und Barcode-Scan</a>).
+Wenn du einen Ernährungsplan per Link teilst, wird dieser Plan ebenfalls hochgeladen (siehe <a href="#shared-plans">Geteilte Ernährungspläne</a>).
 </div>
 
 <h2>1. Was Pump erfasst</h2>
@@ -168,6 +169,21 @@ ein Barcode nicht gefunden wurde, wird der Barcode mit diesem Lebensmittel gespe
 Premium wie deine anderen eigenen Lebensmittel synchronisiert). Produktdaten von Open Food Facts
 stehen unter der
 <a href="https://opendatacommons.org/licenses/odbl/1-0/" rel="noopener">Open Database License</a>.</p>
+
+<h3 id="shared-plans">Geteilte Ernährungspläne</h3>
+<p>Du kannst einen Ernährungsplan als Datei oder per Link teilen. Eine Datei geht dorthin, wohin du sie
+schickst; wir sehen sie nie. Teilst du <strong>per Link</strong>, werden Name und Inhalt des Plans
+(Mahlzeiten, Lebensmittel, Mengen und Nährwerte) zusammen mit deiner Konto-ID in Cloud Firestore
+hochgeladen, damit nur du deine Links auflisten und entfernen kannst. Jeder, der den Link hat, kann diesen
+Plan in der App oder auf pumphq.app ohne Anmeldung ansehen. Der Plan enthält weder deinen Namen noch deine
+E-Mail-Adresse noch andere Angaben über dich, und Links sind nicht aufgelistet oder durchsuchbar.</p>
+<p>Wird ein Link auf pumphq.app geöffnet, fragt der Browser genau diesen einen Plan bei Google Firestore ab;
+die Anfrage erreicht Google dabei von der IP-Adresse aus. Sonst wird nichts von anderen Servern geladen und
+nichts im Browser gespeichert. Meldest du einen geteilten Plan, erhalten wir die ID des Links und die
+Begründung, die du eingibst, aber nicht, wer die Meldung geschickt hat.</p>
+<p>Ein geteilter Plan bleibt online, bis du seinen Link unter <em>Ernährungspläne → Meine geteilten Links</em>
+entfernst, bis du dein Konto löschst (alle deine Links werden mitgelöscht) oder bis wir ihn nach einer
+Meldung entfernen. Kopien, die andere bereits in ihre App übernommen haben, gehören ihnen.</p>
 
 <h3 id="testing">Teilnahme an einem Test der App</h3>
 <p>Das gilt nur, wenn du an einem Vorab-Test von Pump teilnimmst. Dazu trittst du einer Google Group

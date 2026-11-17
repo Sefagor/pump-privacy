@@ -47,7 +47,7 @@
 <header class="page-hero">
   <div class="container">
     <h1>Politique de confidentialité</h1>
-<p>Dernière mise à jour : 28 octobre 2026</p>
+<p>Dernière mise à jour : 17 novembre 2026</p>
     <div class="rule"></div>
   </div>
 </header>
@@ -72,6 +72,7 @@ envoyées dans le cloud que si tu te connectes <em>et</em> que tu as un abonneme
 seule chose qui quitte le téléphone pour tout le monde, c'est la recherche d'aliments : ce que tu
 tapes, ou le code-barres que tu scannes, est envoyé à Open Food Facts pour trouver des produits, jamais tes journaux ni les données de ton compte (voir
 <a href="#food-search">Recherche d'aliments et scan de codes-barres</a>).
+Si tu partages un plan alimentaire par lien, ce plan est aussi envoyé (voir <a href="#shared-plans">Plans alimentaires partagés</a>).
 </div>
 
 <h2>1. Informations enregistrées par Pump</h2>
@@ -170,6 +171,21 @@ aliment après qu'un code-barres n'a pas été trouvé, le code-barres est enreg
 (et, avec Premium, synchronisé comme tes autres aliments personnalisés). Les données produits d'Open
 Food Facts sont disponibles sous
 <a href="https://opendatacommons.org/licenses/odbl/1-0/" rel="noopener">Open Database License</a>.</p>
+
+<h3 id="shared-plans">Plans alimentaires partagés</h3>
+<p>Tu peux partager un plan alimentaire sous forme de fichier ou par lien. Un fichier va là où tu l'envoies ;
+nous ne le voyons jamais. Quand tu partages <strong>par lien</strong>, le nom et le contenu du plan (repas,
+aliments, quantités et valeurs nutritionnelles) sont envoyés vers Cloud Firestore avec l'identifiant de ton
+compte, afin que toi seul puisses lister et retirer tes liens. Toute personne qui a le lien peut voir ce plan,
+dans l'appli ou sur pumphq.app, sans se connecter. Le plan ne contient ni ton nom, ni ton e-mail, ni d'autres
+informations sur toi, et les liens ne sont ni listés ni consultables par recherche.</p>
+<p>Ouvrir un lien sur pumphq.app fait demander ce seul plan à Google Firestore par le navigateur ; la requête
+parvient donc à Google depuis ton adresse IP. Rien d'autre n'est chargé depuis d'autres serveurs et rien
+n'est stocké dans le navigateur. Si tu signales un plan partagé, nous recevons l'identifiant du lien et le
+motif que tu saisis, mais pas l'auteur du signalement.</p>
+<p>Un plan partagé reste en ligne jusqu'à ce que tu retires son lien dans <em>Plans alimentaires → Mes liens
+partagés</em>, que tu supprimes ton compte (tous tes liens sont supprimés avec lui) ou que nous le retirions
+après un signalement. Les copies que d'autres ont déjà ajoutées à leur appli leur appartiennent.</p>
 
 <h3 id="testing">Participer à un test de l'appli</h3>
 <p>Cette section ne s'applique que si tu participes à un test de Pump avant sa sortie. Pour
